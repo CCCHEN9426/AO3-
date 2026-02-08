@@ -1,0 +1,35 @@
+<body>
+  <div class="thread">
+    <div class="user">
+      <div class="avatar"></div>
+      <div class="name">这里是用户名</div>
+    </div>
+    <div class="title"> 这里是标题</div>
+    <div class="tag">这里是内容</div>
+    <div class="time">发帖时间：xxxx年xx月xx日</div>
+    <div class="reply-title">回帖区</div>
+  </div>
+  <div class="post">
+    <div class="post-head">
+      <span class="floor">1楼</span>
+      <span class="floor-name">这是1楼的用户名</span>
+    </div>
+    <div class="content">这里是回复楼</div>
+  </div>
+
+  <div class="post">
+      <span class="floor">2楼</span>
+      <span class="floor-name">这是2楼的用户名</span>
+    <div class="quote"> 1楼：这里是引用的回复楼 </div>
+    <div class="content">新的回复楼</div>
+  </div>
+  <div class="post">
+    <div class="post-head">
+      <span class="floor">3楼</span>
+      <span class="floor-name-user">楼主</span>
+    </div>
+    <div class="content">这里是回复楼</div>
+  </div>
+<div class="end">该帖已🔒</div>
+
+</body>
