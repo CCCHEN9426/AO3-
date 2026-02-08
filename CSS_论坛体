@@ -1,0 +1,84 @@
+#workskin .thread p,
+#workskin .post p {
+  margin: 0;
+}
+
+#workskin body {
+  margin: 0;
+  background: #f5f6f7;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  font-size: 14px;
+}
+
+#workskin .thread {
+  padding: 18px 16px 6px 16px;
+  background: #ffffff;
+}
+
+#workskin .user {
+  margin-bottom: 6px;
+}
+
+#workskin .avatar {
+  width: 38px;
+  height: 38px;
+  background: #ddd;
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#workskin .name {
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+#workskin .title {
+  font-size: 19px;
+  line-height: 1.45;
+  margin: 14px 0;
+}
+
+#workskin .tag {
+  color: #666;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+#workskin .reply-title {
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+  margin-top: 6px;
+}
+
+#workskin .post {
+  padding: 6px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+}
+
+#workskin .floor {
+  color: #888;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
+#workskin .content {
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+#workskin .quote {
+  background: #f1f2f4;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  color: #666;
+  font-size: 12px;
+}
