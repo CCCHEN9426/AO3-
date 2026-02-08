@@ -1,9 +1,5 @@
-#workskin .thread p,
-#workskin .post p {
-  margin: 0;
-}
-
-#workskin body {
+/*消除AO3内联p的默认样式*/
+body {
   margin: 0;
   background: #f5f6f7;
   font-family: Arial, Helvetica, sans-serif;
@@ -11,16 +7,17 @@
   font-size: 14px;
 }
 
-#workskin .thread {
+/* 主帖 */
+.thread {
   padding: 18px 16px 6px 16px;
   background: #ffffff;
 }
 
-#workskin .user {
+.user {
   margin-bottom: 6px;
 }
 
-#workskin .avatar {
+.avatar {
   width: 38px;
   height: 38px;
   background: #ddd;
@@ -29,7 +26,7 @@
   vertical-align: middle;
 }
 
-#workskin .name {
+.name {
   font-size: 15px;
   font-weight: bold;
   display: inline-block;
@@ -37,19 +34,21 @@
   vertical-align: middle;
 }
 
-#workskin .title {
+.title {
   font-size: 19px;
   line-height: 1.45;
   margin: 14px 0;
+
 }
 
-#workskin .tag {
+.time {
   color: #666;
-  margin-bottom: 4px;
-  font-size: 13px;
+  margin: 5px 0;
+  font-size: 12px;
+  text-align: right;
 }
 
-#workskin .reply-title {
+.reply-title {
   font-size: 15px;
   font-weight: bold;
   border-bottom: 1px solid #eee;
@@ -57,28 +56,72 @@
   margin-top: 6px;
 }
 
-#workskin .post {
-  padding: 6px 16px;
+/* 楼层 */
+.post {
+  padding: 8px 16px;
   border-bottom: 1px solid #f0f0f0;
   background: #fff;
 }
 
-#workskin .floor {
-  color: #888;
+/* 楼层头部 */
+.post-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   margin-bottom: 6px;
-  font-size: 12px;
 }
 
-#workskin .content {
+/* 楼层数字 */
+.floor {
+  color: #888;
+  font-size: 13px;
+}
+
+/* 楼层用户名 */
+.floor-name {
+  color: #888;
+  font-size: 13px;
+}
+/* 楼主标识 */
+.floor-name-user {
+  padding: 0.5px 2.5px;
+  border-radius: 2.5px;
+  font-size: 13px;
+background: linear-gradient(
+  150deg,
+  rgb(164, 210, 246),
+  rgb(255, 192, 203)
+);
+
+}
+.content {
   font-size: 14px;
   line-height: 1.45;
 }
 
-#workskin .quote {
+/* 引用 */
+.quote {
   background: #f1f2f4;
   padding: 8px;
   border-radius: 6px;
   margin-bottom: 6px;
+  margin-top: 6px;
   color: #666;
   font-size: 12px;
+}
+/* 结束标志 */
+.end {
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  padding: 26px 0 30px;
+  letter-spacing: 2px;
+  background: #f5f6f7;
+}
+
+.end::before,
+.end::after {
+  content: "─";
+  margin: 0 8px;
+  color: #ddd;
 }
