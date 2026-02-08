@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<!-- <head>
+  <meta charset="UTF-8">
+  <title>论坛体</title>
+  <link rel="stylesheet" href="style.css">
+</head> -->
+
 <body>
   <div class="thread">
     <div class="user">
@@ -18,18 +27,22 @@
   </div>
 
   <div class="post">
+    <div class="post-head">
       <span class="floor">2楼</span>
       <span class="floor-name">这是2楼的用户名</span>
+    </div>
     <div class="quote"> 1楼：这里是引用的回复楼 </div>
     <div class="content">新的回复楼</div>
   </div>
   <div class="post">
     <div class="post-head">
       <span class="floor">3楼</span>
-      <span class="floor-name-user">楼主</span>
+      <span class="floor-name-user" >楼主</span>
     </div>
     <div class="content">这里是回复楼</div>
   </div>
 <div class="end">该帖已🔒</div>
 
 </body>
+
+</html>

@@ -1,4 +1,6 @@
-/*消除AO3内联p的默认样式*/
+/* ========= AO3论坛体·完整稳定版 ========= */
+
+/* 基础 */
 body {
   margin: 0;
   background: #f5f6f7;
@@ -7,16 +9,51 @@ body {
   font-size: 14px;
 }
 
-/* 主帖 */
+/* ===== AO3自动p修复 ===== */
+.thread p,
+.post p,
+.user p,
+.title p,
+.tag p,
+.time p,
+.content p,
+.quote p,
+.post-head p,
+.end p {
+  margin: 0;
+}
+
+/* 避免post-head被拆行 */
+.post-head p {
+  display: flex;
+  align-items: center;
+}
+
+.post-head br {
+  display: none;
+}
+
+/* inline修复 */
+.user p,
+.name p,
+.title p,
+.content p,
+.time p {
+  display: inline;
+}
+
+/* ===== 主帖 ===== */
 .thread {
   padding: 18px 16px 6px 16px;
   background: #ffffff;
+  border-bottom: 1px solid #eee;
 }
 
 .user {
   margin-bottom: 6px;
 }
 
+/* 头像 */
 .avatar {
   width: 38px;
   height: 38px;
@@ -26,6 +63,7 @@ body {
   vertical-align: middle;
 }
 
+/* 用户名 */
 .name {
   font-size: 15px;
   font-weight: bold;
@@ -34,41 +72,58 @@ body {
   vertical-align: middle;
 }
 
+/* 标题 */
 .title {
   font-size: 19px;
   line-height: 1.45;
   margin: 14px 0;
-
+  font-weight: bold;
 }
 
+/* 正文 */
+.tag {
+  line-height: 1.6;
+}
+
+/* 时间 */
 .time {
   color: #666;
-  margin: 5px 0;
+  margin: 6px 0;
   font-size: 12px;
   text-align: right;
 }
 
+/* 回帖区标题 */
 .reply-title {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
-  border-bottom: 1px solid #eee;
   padding-bottom: 6px;
   margin-top: 6px;
 }
 
-/* 楼层 */
+/* ===== 楼层 ===== */
 .post {
-  padding: 8px 16px;
+  padding: 10px 16px;
   border-bottom: 1px solid #f0f0f0;
   background: #fff;
 }
 
-/* 楼层头部 */
+/* 楼层头 */
 .post-head {
   display: flex;
   align-items: center;
-  gap: 8px;
   margin-bottom: 6px;
+}
+
+/* 用margin模拟gap */
+.post-head > *,
+.post-head p > * {
+  margin-right: 8px;
+}
+
+.post-head > *:last-child,
+.post-head p > *:last-child {
+  margin-right: 0;
 }
 
 /* 楼层数字 */
@@ -77,26 +132,26 @@ body {
   font-size: 13px;
 }
 
-/* 楼层用户名 */
+/* 用户名 */
 .floor-name {
   color: #888;
   font-size: 13px;
 }
+
 /* 楼主标识 */
 .floor-name-user {
-  padding: 0.5px 2.5px;
-  border-radius: 2.5px;
-  font-size: 13px;
-background: linear-gradient(
-  150deg,
-  rgb(164, 210, 246),
-  rgb(255, 192, 203)
-);
-
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-size: 12px;
+  background: #888;
+  color: #fff;
 }
+
+/* 回复内容 */
 .content {
   font-size: 14px;
-  line-height: 1.45;
+  line-height: 1.6;
+  margin-top: 2px;
 }
 
 /* 引用 */
@@ -109,7 +164,8 @@ background: linear-gradient(
   color: #666;
   font-size: 12px;
 }
-/* 结束标志 */
+
+/* ===== 结束标志 ===== */
 .end {
   text-align: center;
   color: #999;
@@ -119,6 +175,7 @@ background: linear-gradient(
   background: #f5f6f7;
 }
 
+/* 横线 */
 .end::before,
 .end::after {
   content: "─";
