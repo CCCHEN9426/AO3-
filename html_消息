@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<!-- <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js"></script>
+</head> -->
+
+<body>
+<div class="poll-wrap">
+
+  <div class="poll-title">大🍉｜《天生一对》选角</div>
+  <div class="poll-sub">子标题</div>
+
+  <div class="poll-card">
+
+    <div class="poll-question">选角</div>
+    <div class="poll-meta">
+      271199人参与 · 距离结束还有 13天14时00分
+    </div>
+
+    <div class="poll-input">aaa</div>
+    <div class="poll-result">
+      <span class="poll-right-person">答对 1人（0.1%）</span>
+      <span class="poll-person">999+人（99.9%）（0.1%）</span>
+      <span class="poll-wrong">你答错了</span>
+    </div>
+
+    <div class="poll-answer">
+      正确答案：封建家族跨代那对
+    </div>
+
+  </div>
+</div>
+
+</body>
+
+</html>

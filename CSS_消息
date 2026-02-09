@@ -1,0 +1,109 @@
+/* ===== AO3自动p修复（投票组件专用）===== */
+.poll-wrap p,
+.poll-title p,
+.poll-sub p,
+.poll-card p,
+.poll-question p,
+.poll-meta p,
+.poll-input p,
+.poll-result p,
+.poll-answer p {
+  margin: 0;
+}
+/* 避免poll-result被拆行 */
+.poll-result p {
+  display: flex;
+  align-items: center;
+}
+
+.poll-result br {
+  display: none;
+}
+/* ===== 整体背景 ===== */
+.poll-wrap {
+  background: #f6f7f9;
+  padding: 20px 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 标题 */
+.poll-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+/* 小标签 */
+.poll-sub {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* 卡片 */
+.poll-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid #e6e6e6;
+}
+
+/* 题目 */
+.poll-question {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* 参与人数 */
+.poll-meta {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+/* 输入框 */
+.poll-input {
+  background: #f3f4f6;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* 结果 */
+.poll-result {
+  font-size: 15px;
+  color: #666;
+  margin-top: 6px;
+}
+
+/* 让p成为真正的flex容器 */
+.poll-result p {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* 左侧：答对人数 */
+.poll-right-person {
+  margin-right: auto;
+}
+
+/* 右侧块 */
+.poll-person {
+  margin-right: 6px;
+}
+
+
+/* 错误提示 */
+.poll-wrong {
+  color: #e54848;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* 正确答案 */
+.poll-answer {
+  margin-top: 10px;
+  font-weight: bold;
+}
