@@ -28,14 +28,14 @@
 
 /* 标题 */
 .poll-title {
-  font-size: 22px;
+  font-size: 19px;
   font-weight: bold;
   margin-bottom: 14px;
 }
 
 /* 小标签 */
 .poll-sub {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 12px;
 }
 
@@ -49,7 +49,7 @@
 
 /* 题目 */
 .poll-question {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 6px;
 }
@@ -57,7 +57,7 @@
 /* 参与人数 */
 .poll-meta {
   color: #888;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 14px;
 }
 
@@ -66,13 +66,13 @@
   background: #f3f4f6;
   border-radius: 10px;
   padding: 14px;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 12px;
 }
 
 /* 结果 */
 .poll-result {
-  font-size: 15px;
+  font-size: 13px;
   color: #666;
   margin-top: 6px;
 }
@@ -106,4 +106,5 @@
 .poll-answer {
   margin-top: 10px;
   font-weight: bold;
+  font-size: 15px;
 }
